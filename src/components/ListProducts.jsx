@@ -18,8 +18,6 @@ const ListProd = styled.ul`
 
   li {
     display: flex;
-  align-items: center;
-  flex-direction: column;
     padding-left: 1rem;
     padding-right: 1rem;
     cursor: pointer;
