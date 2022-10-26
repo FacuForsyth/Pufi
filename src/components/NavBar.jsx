@@ -13,7 +13,7 @@ const Header = styled.div`
   width: 100%;
   top: 0%;
 `
-const Title = styled.h1`
+export const Title = styled.h1`
   padding-left: 12px;
   color: white;
   font-size: 2.5rem;
@@ -37,7 +37,6 @@ const ListAdm = styled.ul`
 `
 
 const NavBar = () => {
- 
 
   return (
     <Header>
@@ -47,11 +46,11 @@ const NavBar = () => {
 
       <ListAdm>
         <li>
-          <span>MI CUENTA <MdOutlineKeyboardArrowDown size={10}/></span>
+          <span>Mi cuenta <MdOutlineKeyboardArrowDown size={10}/></span>
         </li>
         <hr/>
         <li>
-          <span>MI COMPRA</span>
+          <span>Mi compra</span>
         </li>
       </ListAdm>
 

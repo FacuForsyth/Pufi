@@ -167,7 +167,7 @@ const Home = () => {
           </TextCenter>    
             <img src={img3} alt="img_home" />
         </SliderStyled>
-      </Carousel>;
+      </Carousel>
     </HomeStyled>
   )
 };
