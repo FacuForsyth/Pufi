@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import Products from './components/Products';
@@ -13,7 +11,7 @@ import ProductDetail3 from './img/prod/pufi_cart.png'
 import ProductDetail4 from './img/prod/pufi_nap.png'
 import Instagram from './components/Instagram';
 import NewsLetter from './components/Newsletter';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 
 
 function App() {
@@ -53,6 +51,6 @@ function App() {
       <Footer />
    </div>
   );
-}
+};
 
 export default App;
