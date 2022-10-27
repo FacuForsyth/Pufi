@@ -13,11 +13,16 @@ import ProductDetail3 from './img/prod/pufi_cart.png'
 import ProductDetail4 from './img/prod/pufi_nap.png'
 import Instagram from './components/Instagram';
 import NewsLetter from './components/Newsletter';
+import toast, { Toaster } from 'react-hot-toast';
 
 
 function App() {
   return (
    <div>
+    <Toaster 
+      position="top-center"
+      reverseOrder={false}
+    />
       <Home />
       <Products
         image1={ProductImage1}

@@ -1,36 +1,10 @@
 import React from "react";
+import { ListProd } from "../styles/listdProducts";
 import { Link } from "react-scroll";
-import styled from "styled-components";
 import iconpuff from '../img/icons/icon-puff.png';
 import iconcart from '../img/icons/icon-cart.png';
 import iconnap from '../img/icons/icon-nap.png';
 import iconrain from '../img/icons/icon-rain.png';
-
-const ListProd = styled.ul`
-  display: flex;
-  list-style: none;
-
-  div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  li {
-    display: flex;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    cursor: pointer;
-    font-size: medium;
-    color: white;
-    text-transform: capitalize;
-  
-    &:hover {
-      transform: scale(1.05);
-      transition-duration: 200ms;
-    }
-  }
-` 
 
 const ListProducts = () => {
 
@@ -42,7 +16,8 @@ const ListProducts = () => {
           <img src={iconpuff} alt="icon_puff" />
           PUFI PUFF
         </div>
-      )
+      ),
+      link: 'Pufi PUFF'
     },
     {
       id: 2,
@@ -51,7 +26,8 @@ const ListProducts = () => {
           <img src={iconrain} alt="icon_rain" />
           PUFI RAIN
         </div>
-      )
+      ),
+      link: 'Pufi RAIN'
     },
     {
       id: 3,
@@ -60,7 +36,8 @@ const ListProducts = () => {
           <img src={iconcart} alt="icon_cart" />
           PUFI CART
         </div>
-      )
+      ),
+      link: 'Pufi CART'
     },
     {
       id: 4,
@@ -69,17 +46,18 @@ const ListProducts = () => {
           <img src={iconnap} alt="icon_nap" />
           PUFI NAP
         </div>
-      )
+      ),
+      link: 'Pufi NAP'
     },
   ];
 
   return (
     <ListProd>
-      {products.map(({ id, prod }) => (
+      {products.map(({ id, prod, link }) => (
         <li
           key={id}
         >
-          <Link to={prod} smooth duration={500}>
+          <Link to={link} smooth duration={500}>
             {prod}
           </Link>
         </li>
